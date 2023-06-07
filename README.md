@@ -5,14 +5,32 @@ UnStop ASSIGNMENT
 ---
 
 
-## To Run the Project in Local
+Run Locally - 
 
-1> Clone the Repository. command:- git clone https://github.com/Fizz007/unStopTask.git
+To run the frontend part of the project locally, please follow these steps:
 
-2> Change directory. command:- cd unStopTask
+    Clone the project repository:
 
-3> Install node modules. command- npm install
+shell
 
-4> Install packages routes.
+git clone https://github.com/Fizz007/unStopTask.git
+
+    Navigate to the project directory:
+
+shell
+
+cd unStopTask
+
+    Install the project dependencies:
+
+shell
+
+npm install
+
+    Start the server:
+
+shell
+
+npm run start
 
 
