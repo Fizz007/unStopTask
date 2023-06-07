@@ -1,38 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.hr {
+  width: 2px;
+  height: 100vh;
+  background-color: white;
+}
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00b9f5;
+  color: black;
+  overflow: hidden;
+  
+}
+.Container {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  align-items: center;
+ 
+}
+#seats {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.seat {
+  width: 40px;
+  height: 40px;
+  color: black;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  /* box-shadow: inset 0 0 20px #e2dede; */
+  background-color: white;
+  /* box-shadow: inset 8px 8px 8px #fff, inset -8px -8px 8px #fff; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.seat.booked {
+  /* background-color: gray; */
+  /* box-shadow: inset 0 0 20px #dfdddd; */
+  color: white;
+  font-weight: 700;
+
+  background-color:#20BF7A;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #00b9f5;
+}
+input {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 8px 8px 8px rgb(172, 168, 168),
+    inset -8px -8px 8px rgb(230, 225, 225);
+}
+.indentify {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+}
+.err {
+  color: red;
+}
+.bookedSeat {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+ 
+  background-color: #20BF7A;
+}
+.available {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: white;
+  
+}
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color:#fff ;
+  color: #00b9f5;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 18px;
+  border: 1px solid;
+}
+
+.show {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  border-radius: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 900px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .hr {
+    width: 500px;
+    height: 2px;
+    background-color: white;
   }
 }
